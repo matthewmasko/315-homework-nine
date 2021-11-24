@@ -1,0 +1,126 @@
+.browse-container {
+    max-width: 100vw;
+    min-height: 1000px;
+    background-color: #A7E8BD;
+    margin: 0 auto;
+
+    .recipeHero-container {
+        max-width: 100vw;
+        min-height: 1000px;
+        background-color: #A7E8BD;
+        background-image: url(../images/recipe-hero.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: .7;
+        margin: 0 auto;
+        margin-top: -75px;
+        padding-left: 100px;
+        padding-right: 75px;
+        
+        h1 {
+            padding-top: 160px;
+        }
+
+        .rHeroPhoto-main {
+            margin-top: 50px;
+            min-height: 263px;
+            // background-color: olivedrab;
+            display: flex;
+            justify-content: space-evenly;
+    
+            .rHero-rHolder {
+                height: 263px;
+                width: 524px;
+                // background-color: navy;
+                display: flex;
+            }
+
+            .rHero-foodPhoto {
+width: 300px;
+height: 263px;
+// background-color: navajowhite;
+
+img {
+    width: 300px;
+    height: 263px;
+    border-radius: 24px;
+}
+            }
+
+            .rHero-foodDescription {
+                width: 224px;
+height: 263px;
+background-color: white;
+border-radius: 24px;
+padding: 40px;
+
+h2 {
+    font-family: lato-bold;
+    font-size: 15px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+p {
+    font-family: lato-regular;
+    font-size: 9px;
+
+}
+
+span {
+
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 20px;
+
+    img {
+    height: 23px;
+    width: 23px;
+    }
+    p {
+        margin-left: 17px;
+        font-family: lato-regular;
+    font-size: 10px;
+    }
+}
+            }
+        }
+        }
+ }
+
+ @media screen and (max-width: 960px) {
+
+    .browse-container {
+        min-height: 1500px;
+
+        .recipeHero-container {
+            min-height: 1500px;
+        }
+
+    h1 {
+        text-align: center;
+    }
+    .rHeroPhoto-main {
+        flex-direction: column;
+        align-items: center;
+       margin-bottom: 0px;
+
+        .rHero-rHolder {
+            margin-top: 20px;
+        }
+    }
+
+    }
+}
+
+@media screen and (max-width: 525px) {
+    .browse-container {
+        min-height: 1700px;
+
+        .recipeHero-container {
+            min-height: 1700px;
+        }
+    }
+
+}
